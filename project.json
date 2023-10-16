@@ -1,0 +1,8 @@
+{
+  "name": "@atomicdesign/atomic-sdk",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "library",
+  "sourceRoot": "libs/@atomicdesign/atomic-sdk/src",
+  "targets": {},
+  "tags": []
+}
