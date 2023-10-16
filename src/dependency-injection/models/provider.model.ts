@@ -1,4 +1,4 @@
-import { Constructable } from "@/types/constructable.type";
+import { Constructable } from "@atomicdesign/atomic-singularity";
 import { ProviderScope } from "../constants/provider-scopes.constant";
 import { ProviderLifetimes } from "../constants/provider-lifetimes.constant";
 import { DependencyTokenType } from "../types/dependency-token.type";

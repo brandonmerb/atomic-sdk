@@ -1,7 +1,8 @@
 {
-  "name": "atomic-sdk",
+  "name": "@atomicdesign/atomic-sdk",
   "version": "1.0.0",
   "description": "",
+  "type": "module",
   "private": true,
   "author": {
     "name": "Brandon Erb",
@@ -43,5 +44,22 @@
     "dist/**/*.ts",
     "dist/**/*.d.ts",
     "dist/**/*.js"
-  ]
+  ],
+  "exports": {
+    "authentication": {
+      "import": "./dist/authentication.js",
+      "types": "./dist/authentication.d.ts",
+      "default": "./dist/authentication.js"
+    },
+    "dependency-injection": {
+      "import": "./dist/dependency-injection.js",
+      "types": "./dist/dependency-injection.d.ts",
+      "default": "./dist/dependency-injection.js"
+    },
+    "logging": {
+      "import": "./dist/logging.js",
+      "types": "./dist/logging.d.ts",
+      "default": "./dist/logging.js"
+    }
+  }
 }

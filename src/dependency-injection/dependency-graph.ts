@@ -1,6 +1,5 @@
-import { Graph, GraphNode } from "@/util/graphing.structures";
 // import { getMetadata, hasMetadata, setMetadata } from "../../helpers";
-import { Constructable } from "@/types/constructable.type";
+import { Constructable, Graph, GraphNode } from "@atomicdesign/atomic-singularity";
 // import { Logger } from "../logging";
 // import { SYSTEM_LOGGER, SYSTEM_METADATA_NAME } from "./constants/system-info.constants";
 // import { ProviderMetadata } from "./interfaces/provider-metadata.interface";

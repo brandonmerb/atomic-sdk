@@ -1,7 +1,7 @@
 import { LogFormatterType } from "./types/log-formatter.type";
 import { LogLevelsEnum } from "./enums/log-levels.enum";
 import moment from 'moment';
-import { SingletonAlreadyInstantiated } from "@/errors/singleton-errors";
+import { SingletonAlreadyInstantiated } from "@atomicdesign/atomic-singularity";
 
 export class LogSystem {
   private static _instance: LogSystem;

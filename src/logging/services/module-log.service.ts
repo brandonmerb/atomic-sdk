@@ -1,4 +1,4 @@
-import { AtomicModuleInterface } from "../../core/interfaces/atomic-module.interface";
+import { AtomicModuleInterface } from "@atomicdesign/atomic-singularity";
 import { AbstractLogService } from "./abstract-log.service";
 import moment from 'moment';
 

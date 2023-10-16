@@ -1,5 +1,5 @@
 import type { DependencyTokenType } from '@dependency-injection';
-import { SingletonAlreadyInstantiated } from "@/errors/singleton-errors";
+import { SingletonAlreadyInstantiated } from "@atomicdesign/atomic-singularity";
 import { DependencyGraph } from './dependency-graph';
 import { ModuleLogService } from '@logging';
 
