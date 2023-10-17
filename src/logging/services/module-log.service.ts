@@ -1,17 +1,8 @@
 import { AtomicModuleInterface } from "@atomicdesign/atomic-singularity";
-import { AbstractLogService } from "./abstract-log.service";
-import moment from 'moment';
+import { DetailedLogService } from "./detailed-log.service";
 
-export class ModuleLogService extends AbstractLogService {
+export class ModuleLogService extends DetailedLogService {
   constructor(public module: AtomicModuleInterface) {
-    super();
-  }
-
-  public logMessage(channel: string, message: string): void {
-    super.logMessage(channel, message, this.moduleFormat)
-  }
-
-  public moduleFormat(channel: string, message: string): string {
-    return `[${this.module.name}] [${channel.toUpperCase()}] [${moment(new Date()).format("LTS")}] ${message}`;
+    super(module.name);
   }
 }

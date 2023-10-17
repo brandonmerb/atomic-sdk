@@ -10,10 +10,10 @@
   },
   "scripts": {
     "clean": "rimraf ./dist",
-    "build": "npm run clean && npm run build:full",
-    "build:common": "npm run clean && npm run build:swc",
-    "build:swc": "swc ./src -d ./dist/src",
-    "build:full": "tsc && tsc-alias"
+    "build": "npm run clean && npm run build:vite",
+    "build:swc": "swc ./src -d ./dist -C ./config/.swcrc",
+    "build:vite": "vite build -c ./config/vite.config.ts",
+    "test": "jest -c ./config/jest.config.ts"
   },
   "dependencies": {
     "@atomicdesign/atomic-singularity": "1.0.0"
@@ -40,23 +40,18 @@
     "vite-plugin-dts": "^3.6.0",
     "vite-tsconfig-paths": "^4.2.1"
   },
-  "files": [
-    "dist/**/*.ts",
-    "dist/**/*.d.ts",
-    "dist/**/*.js"
-  ],
   "exports": {
-    "authentication": {
+    "./authentication": {
       "import": "./dist/authentication.js",
       "types": "./dist/authentication.d.ts",
       "default": "./dist/authentication.js"
     },
-    "dependency-injection": {
+    "./dependency-injection": {
       "import": "./dist/dependency-injection.js",
       "types": "./dist/dependency-injection.d.ts",
       "default": "./dist/dependency-injection.js"
     },
-    "logging": {
+    "./logging": {
       "import": "./dist/logging.js",
       "types": "./dist/logging.d.ts",
       "default": "./dist/logging.js"
