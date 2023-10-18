@@ -16,7 +16,8 @@
     "test": "jest -c ./config/jest.config.ts"
   },
   "dependencies": {
-    "@atomicdesign/atomic-singularity": "1.0.0"
+    "@atomicdesign/atomic-singularity": "1.0.0",
+    "phantomdi": "^0.0.5"
   },
   "peerDependencies": {
     "moment": "^2.29.4",

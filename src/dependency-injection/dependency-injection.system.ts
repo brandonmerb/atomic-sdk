@@ -3,6 +3,9 @@ import { SingletonAlreadyInstantiated } from "@atomicdesign/atomic-singularity";
 import { DependencyGraph } from './dependency-graph';
 import { ModuleLogService } from '@logging';
 
+/**
+ * WIP. Don't use this yet
+ */
 export class DependencyInjectionSystem {
   public static _instance: DependencyInjectionSystem;
   protected logger: ModuleLogService = new ModuleLogService({ name: 'DI-SYSTEM' })
