@@ -43,22 +43,22 @@
   },
   "exports": {
     "./authentication": {
+      "atomicdesign:local": "./src/authentication/index.ts",
       "import": "./dist/authentication.js",
       "types": "./dist/authentication.d.ts",
-      "default": "./dist/authentication.js",
-      "atomicdesign:local": "./src/authentication/index.ts"
+      "default": "./dist/authentication.js"
     },
     "./dependency-injection": {
+      "atomicdesign:local": "./src/dependency-injection/index.ts",
       "import": "./dist/dependency-injection.js",
       "types": "./dist/dependency-injection.d.ts",
-      "default": "./dist/dependency-injection.js",
-      "atomicdesign:local": "./src/dependency-injection/index.ts"
+      "default": "./dist/dependency-injection.js"
     },
     "./logging": {
+      "atomicdesign:local": "./src/logging/index.ts",
       "import": "./dist/logging.js",
       "types": "./dist/logging.d.ts",
-      "default": "./dist/logging.js",
-      "atomicdesign:local": "./src/logging/index.ts"
+      "default": "./dist/logging.js"
     }
   }
 }
