@@ -4,7 +4,6 @@ import { LogLevelsEnum } from "./enums/log-levels.enum";
 import { SingletonAlreadyInstantiated } from "@atomicdesign/atomic-singularity";
 import { LogSystemOptionsInterface } from "./interfaces/log-system-options.interface";
 import { LogSystemOptionsDefaults } from './defaults/log-system-options.defaults'
-import { LoggingMiddleware } from '@atomicdesign/atomic-singularity'
 
 export class LogSystem {
   private static _instance: LogSystem;
@@ -69,7 +68,7 @@ export class LogSystem {
   /**
    * Used to control what level of logs are displayed
    */
-  protected logLevel: number = LogLevelsEnum.info;
+  public logLevel: number = LogLevelsEnum.info;
 
   /**
    * Set the logging level
@@ -154,7 +153,6 @@ export class LogSystem {
         break;
       default:
         console.log(message);
-        console.trace("Tracing stack");
         break;
     }
     return this;

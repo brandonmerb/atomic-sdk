@@ -26,6 +26,7 @@ export default defineConfig((config: ConfigEnv): UserConfig => {
       rollupOptions: {
         preserveEntrySignatures: 'strict',
         input: {
+          "index": "./src/index.ts",
           "authentication": "./src/authentication/index.ts",
           "dependency-injection": "./src/dependency-injection/index.ts",
           "logging": "./src/logging/index.ts",
