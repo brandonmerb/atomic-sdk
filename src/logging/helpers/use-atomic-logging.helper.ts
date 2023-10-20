@@ -1,4 +1,4 @@
-import { LoggingMiddleware, AtomicSingularitySystem, MiddlewareUseFunction } from "@atomicdesign/atomic-singularity"
+import { LoggingMiddleware, AtomicSingularitySystem, MiddlewareUseFunction, AtomicModuleInterface } from "@atomicdesign/atomic-singularity"
 import { LogSystemOptionsInterface } from "../interfaces/log-system-options.interface"
 import { LogSystem } from "../log.system";
 
