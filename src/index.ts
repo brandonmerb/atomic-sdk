@@ -1,4 +1,4 @@
-import { AtomicModuleInterface, createModule } from "@atomicdesign/atomic-singularity";
+import { createModule } from "@atomicdesign/atomic-singularity";
 
 // import {  } from "./authentication";
 // import {  } from './dependency-injection';
@@ -13,17 +13,8 @@ import { useAtomicLogging } from './logging';
  * Nebula installations
  */
 export const useAtomicSDK = createModule({
-  name: "Atomic SDK",
-
-  /**
-   * We use the executor system to install all the middleware
-   * from the Atomic SDK when this module is initialized
-   */
-  executors: {
-    module: {
-      middleware: [
-        useAtomicLogging()
-      ]
-    }
-  }
+  name: "Atomic SDK"
+}, () => {
+  // Our preactivation function
+  useAtomicLogging();
 });
