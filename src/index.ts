@@ -3,6 +3,7 @@ import { createModule } from "@atomicdesign/atomic-singularity";
 // import {  } from "./authentication";
 // import {  } from './dependency-injection';
 import { useAtomicLogging } from './logging';
+import { createAtomicLogging } from "./logging/helpers/use-atomic-logging.helper";
 // import {  } from './lookups/'
 
 
@@ -16,5 +17,5 @@ export const useAtomicSDK = createModule({
   name: "Atomic SDK"
 }, () => {
   // Our preactivation function
-  useAtomicLogging();
+  createAtomicLogging();
 });
