@@ -1,8 +1,8 @@
-import { LoggingMiddleware, AtomicSingularitySystem, MiddlewareUseFunction } from "@atomicdesign/atomic-singularity"
+import { LoggingMiddleware, AtomicSingularitySystem, MiddlewareUseFunction, ExecutorFunction } from "@atomicdesign/atomic-singularity"
 import { LogSystemOptionsInterface } from "../interfaces/log-system-options.interface"
 import { LogSystem } from "../log.system";
 
-export function useAtomicLogging(config?: LogSystemOptionsInterface): MiddlewareUseFunction {
+export function useAtomicLogging(config?: LogSystemOptionsInterface): ExecutorFunction {
   return (app?: AtomicSingularitySystem) => {
     createAtomicLogging();
     return true;
