@@ -17,7 +17,9 @@ export default defineConfig((config: ConfigEnv): UserConfig => {
     dts({
       rollupTypes: true,
     }),
-    swc.vite()
+    swc.vite({
+      configFile: './config/.swcrc'
+    })
   ]
 
   return {
